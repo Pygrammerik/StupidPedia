@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StupidPedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing page -->
+    <div id="landing-page" class="landing-page">
+        <div class="landing-container">
+            <!-- Central logo with pixel flower -->
+            <div class="central-logo">
+                <div class="pixel-flower" id="pixel-flower">
+                    <!-- CSS pixel art flower will be created with CSS -->
+                    <div class="flower-grid">
+                        <div class="flower-row">
+                            <span class="pixel"></span><span class="pixel"></span><span class="pixel p-yellow"></span><span class="pixel p-yellow"></span><span class="pixel p-yellow"></span><span class="pixel"></span><span class="pixel"></span>
+                        </div>
+                        <div class="flower-row">
+                            <span class="pixel"></span><span class="pixel p-yellow"></span><span class="pixel p-gold"></span><span class="pixel p-gold"></span><span class="pixel p-gold"></span><span class="pixel p-yellow"></span><span class="pixel"></span>
+                        </div>
+                        <div class="flower-row">
+                            <span class="pixel p-yellow"></span><span class="pixel p-gold"></span><span class="pixel p-orange"></span><span class="pixel p-orange"></span><span class="pixel p-orange"></span><span class="pixel p-gold"></span><span class="pixel p-yellow"></span>
+                        </div>
+                        <div class="flower-row">
+                            <span class="pixel p-yellow"></span><span class="pixel p-gold"></span><span class="pixel p-orange"></span><span class="pixel p-brown"></span><span class="pixel p-orange"></span><span class="pixel p-gold"></span><span class="pixel p-yellow"></span>
+                        </div>
+                        <div class="flower-row">
+                            <span class="pixel p-yellow"></span><span class="pixel p-gold"></span><span class="pixel p-orange"></span><span class="pixel p-orange"></span><span class="pixel p-orange"></span><span class="pixel p-gold"></span><span class="pixel p-yellow"></span>
+                        </div>
+                        <div class="flower-row">
+                            <span class="pixel"></span><span class="pixel p-yellow"></span><span class="pixel p-gold"></span><span class="pixel p-gold"></span><span class="pixel p-gold"></span><span class="pixel p-yellow"></span><span class="pixel"></span>
+                        </div>
+                        <div class="flower-row">
+                            <span class="pixel"></span><span class="pixel"></span><span class="pixel p-yellow"></span><span class="pixel p-yellow"></span><span class="pixel p-yellow"></span><span class="pixel"></span><span class="pixel"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="main-title">StupidPedia</h1>
+                <p class="subtitle">Свободная энциклопедия</p>
+            </div>
+
+            <!-- Language versions around logo -->
+            <div class="languages-grid">
+                <div class="language-link" data-lang="ru">
+                    <strong>Русский</strong><br>
+                    200+ статей
+                </div>
+                <div class="language-link" data-lang="en">
+                    <strong>English</strong><br>
+                    180+ articles
+                </div>
+                <div class="language-link" data-lang="ja">
+                    <strong>日本語</strong><br>
+                    150+ 項目
+                </div>
+                <div class="language-link" data-lang="fr">
+                    <strong>Français</strong><br>
+                    140+ articles
+                </div>
+                <div class="language-link" data-lang="zh">
+                    <strong>中文</strong><br>
+                    130+ 条目
+                </div>
+                <div class="language-link" data-lang="de">
+                    <strong>Deutsch</strong><br>
+                    120+ Artikel
+                </div>
+                <div class="language-link" data-lang="es">
+                    <strong>Español</strong><br>
+                    110+ artículos
+                </div>
+                <div class="language-link" data-lang="it">
+                    <strong>Italiano</strong><br>
+                    100+ voci
+                </div>
+                <div class="language-link" data-lang="pl">
+                    <strong>Polski</strong><br>
+                    90+ haseł
+                </div>
+                <div class="language-link" data-lang="pt">
+                    <strong>Português</strong><br>
+                    80+ artigos
+                </div>
+            </div>
+
+            <!-- Search section -->
+            <div class="landing-search">
+                <input type="text" id="landing-search-input" placeholder="Поиск в StupidPedia..." class="landing-search-input">
+                <button id="landing-search-btn" class="landing-search-btn">Найти</button>
+            </div>
+
+            <!-- Sister projects -->
+            <div class="sister-projects">
+                <div class="project-item">
+                    <strong>StupidСклад</strong><br>
+                    Свободная медиаколлекция
+                </div>
+                <div class="project-item">
+                    <strong>StupidГид</strong><br>
+                    Свободный путеводитель
+                </div>
+                <div class="project-item">
+                    <strong>StupidУчебник</strong><br>
+                    Свободные учебники
+                </div>
+                <div class="project-item">
+                    <strong>StupidСловарь</strong><br>
+                    Свободный словарь
+                </div>
+                <div class="project-item">
+                    <strong>StupidЦитатник</strong><br>
+                    Свободная коллекция цитат
+                </div>
+                <div class="project-item">
+                    <strong>StupidИсточник</strong><br>
+                    Свободная библиотека
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Wikipedia page -->
+    <div id="main-page" class="main-page hidden">
+        <!-- Header -->
+        <header class="wiki-header">
+            <div class="wiki-container">
+                <div class="wiki-logo" id="wiki-logo">
+                    <div class="pixel-flower-small">
+                        <div class="flower-grid-small">
+                            <div class="flower-row-small">
+                                <span class="pixel-small p-yellow"></span><span class="pixel-small p-yellow"></span><span class="pixel-small p-yellow"></span>
+                            </div>
+                            <div class="flower-row-small">
+                                <span class="pixel-small p-gold"></span><span class="pixel-small p-orange"></span><span class="pixel-small p-gold"></span>
+                            </div>
+                            <div class="flower-row-small">
+                                <span class="pixel-small p-yellow"></span><span class="pixel-small p-yellow"></span><span class="pixel-small p-yellow"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <span>StupidPedia</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main wrapper -->
+        <div class="wiki-wrapper">
+            <!-- Sidebar -->
+            <aside class="wiki-sidebar">
+                <div class="sidebar-content">
+                    <nav class="main-nav">
+                        <h3>Навигация</h3>
+                        <ul>
+                            <li><a href="#" class="nav-link" data-action="home">Заглавная страница</a></li>
+                            <li><a href="#" class="nav-link" data-action="random">Случайная статья</a></li>
+                            <li><a href="#" class="nav-link" data-action="all-articles">Все статьи</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="categories-nav">
+                        <h3>Категории</h3>
+                        <ul>
+                            <li><a href="#" class="category-link" data-category="Животные">Животные</a></li>
+                            <li><a href="#" class="category-link" data-category="Растения">Растения</a></li>
+                            <li><a href="#" class="category-link" data-category="Предметы">Предметы</a></li>
+                            <li><a href="#" class="category-link" data-category="Еда">Еда</a></li>
+                            <li><a href="#" class="category-link" data-category="Транспорт">Транспорт</a></li>
+                            <li><a href="#" class="category-link" data-category="Природа">Природа</a></li>
+                            <li><a href="#" class="category-link" data-category="Технологии">Технологии</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="search-box">
+                        <h3>Поиск</h3>
+                        <input type="text" id="search-input" placeholder="Поиск..." class="wiki-search-input">
+                        <button id="search-button" class="wiki-search-btn">Перейти</button>
+                        <div id="search-suggestions" class="search-suggestions"></div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main content -->
+            <main class="wiki-main">
+                <!-- Home content -->
+                <div id="home-content" class="content-section">
+                    <h1 class="main-heading">Добро пожаловать в StupidPedia</h1>
+                    <p class="wiki-description">свободную энциклопедию простых определений</p>
+                    
+                    <div class="welcome-box">
+                        <p><strong>StupidPedia</strong> — это свободная энциклопедия, где все определения максимально просты и понятны. У нас есть <strong>200 статей</strong> на русском языке.</p>
+                    </div>
+
+                    <div class="main-sections">
+                        <div class="section-box">
+                            <h2>Избранная статья</h2>
+                            <div class="featured-content">
+                                <h3 id="featured-title">Арбуз</h3>
+                                <p id="featured-definition">Арбуз - Это арбуз</p>
+                                <a href="#" id="featured-link" class="wiki-link">Читать полностью...</a>
+                            </div>
+                        </div>
+
+                        <div class="section-box">
+                            <h2>Категории статей</h2>
+                            <div class="categories-list">
+                                <div class="category-item" data-category="Животные">
+                                    <strong>Животные</strong> (36)
+                                </div>
+                                <div class="category-item" data-category="Растения">
+                                    <strong>Растения</strong> (35)
+                                </div>
+                                <div class="category-item" data-category="Предметы">
+                                    <strong>Предметы</strong> (35)
+                                </div>
+                                <div class="category-item" data-category="Еда">
+                                    <strong>Еда</strong> (36)
+                                </div>
+                                <div class="category-item" data-category="Транспорт">
+                                    <strong>Транспорт</strong> (25)
+                                </div>
+                                <div class="category-item" data-category="Природа">
+                                    <strong>Природа</strong> (32)
+                                </div>
+                                <div class="category-item" data-category="Технологии">
+                                    <strong>Технологии</strong> (26)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article page -->
+                <div id="article-content" class="content-section hidden">
+                    <div class="article-nav">
+                        <button id="back-button" class="back-btn">← Главная страница</button>
+                    </div>
+                    
+                    <article class="article">
+                        <h1 id="article-title" class="article-title">Название статьи</h1>
+                        
+                        <div class="article-body">
+                            <p id="article-definition">Определение статьи</p>
+                        </div>
+
+                        <div class="article-info">
+                            <p><strong>Категория:</strong> <a href="#" id="article-category-link"><span id="article-category">Категория</span></a></p>
+                        </div>
+
+                        <div class="related-section">
+                            <h2>См. также</h2>
+                            <div id="related-links" class="related-links">
+                                <!-- Related links will be added via JS -->
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Category page -->
+                <div id="category-content" class="content-section hidden">
+                    <div class="article-nav">
+                        <button id="back-button-cat" class="back-btn">← Главная страница</button>
+                    </div>
+                    
+                    <div class="category-section">
+                        <h1 id="category-title" class="category-title">Категория</h1>
+                        <p id="category-description">Статьи в этой категории:</p>
+                        
+                        <div id="category-articles" class="category-articles">
+                            <!-- Category articles will be added via JS -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
